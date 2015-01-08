@@ -10,5 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "$scalatest_version$" % "test"
 )
 
-initialCommands := "import $package$._"
+initialCommands in console := "import $package$._"
+
+// console-quick does not put our project on classpath
+initialCommands in consoleQuick := ""
 
