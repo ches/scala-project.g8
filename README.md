@@ -8,7 +8,7 @@ branches.
 
 For an open source project, I recommend having a look at
 [joescii/scala-oss][oss] for extra features like publishing Scaladoc to GitHub
-Pages, publishing artifacts for multiple Scala versions to Sonatype, etc.
+Pages, publishing artifacts for multiple Scala versions to Maven Central, etc.
 
 ### Usage ###
 
@@ -21,6 +21,10 @@ Then, simply invoke `g8` to generate a project with this template:
     $ g8 ches/scala-project
 
 You will be prompted for parameters such as project name.
+
+**Note**: giter8 0.6.8 is required, since the templates use the new Maven
+resolver feature to suggest the latest version of Scala, etc. This version may
+not yet be available in Homebrew, installation with Conscript is suggested.
 
 ### Available Templates ###
 
@@ -36,8 +40,7 @@ The default is a minimal template for a basic [SBT] project. Features:
   - Minimal build configuration, the only declared dependency is ScalaTest. I'll
     accept a pull request for a specs2 branch if you insist :-)
   - Shallow SBT-style `src` layout, no deep package hierarchy directories.
-  - Prompts for Scala version, defaulting to latest release (well, coming soon
-    in giter8 0.6.7).
+  - Prompts for Scala version, defaulting to latest release.
 
 That's all so far :-)
 
