@@ -1,7 +1,7 @@
+// For sbt's scripted testing plugin that g8 integrates
+resolvers += Resolver.typesafeIvyRepo("releases")
+
 giter8Settings
-
-resolvers += Resolver.url("typesafe", url("http://repo.typesafe.com/typesafe/ivy-releases/"))(Resolver.ivyStylePatterns)
-
 G8Keys.g8TestBufferLog := false
 
 scriptedLaunchOpts ++= sys.process.javaVmArguments.filter(

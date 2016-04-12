@@ -55,7 +55,7 @@ See [Making your own templates].
 
 ### License
 
-Copyright 2014 Ches Martin
+Copyright 2014-2016 Ches Martin
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
