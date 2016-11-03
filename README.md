@@ -60,18 +60,8 @@ See [Making your own templates].
 
 ### License
 
-Copyright 2014-2016 Ches Martin
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at:
-
-<http://www.apache.org/licenses/LICENSE-2.0>
-
-Unless required by applicable law or agreed to in writing, software distributed
-under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations under the License.
+This software template is placed in the public domain according to Creative
+Commons [CC0 1.0]. See `LICENSE.txt`.
 
 [giter8]: https://github.com/foundweekends/giter8
 [templates]: https://github.com/foundweekends/giter8/wiki/giter8-templates
@@ -81,3 +71,4 @@ specific language governing permissions and limitations under the License.
 [SBT]: http://www.scala-sbt.org/
 [scaffold]: http://www.foundweekends.org/giter8/scaffolding.html
 [Making your own templates]: http://www.foundweekends.org/giter8/template.html
+[CC0 1.0]: https://creativecommons.org/publicdomain/zero/1.0/
