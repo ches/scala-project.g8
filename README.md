@@ -37,8 +37,8 @@ Templates available here are described below.
 
 The default is a minimal template for a basic [SBT] project. Features:
 
-  - Minimal build configuration, the only declared dependency is ScalaTest. I'll
-    accept a pull request for a specs2 branch if you insist :-)
+  - Minimal "bare" build configuration, the only declared dependency is
+    ScalaTest. I'll accept a pull request for a specs2 branch if you insist :-)
   - Shallow SBT-style `src` layout, no deep package hierarchy directories.
   - Prompts for Scala version, defaulting to latest release.
 
