@@ -41,6 +41,11 @@ The default is a minimal template for a basic [SBT] project. Features:
     ScalaTest. I'll accept a pull request for a specs2 branch if you insist :-)
   - Shallow SBT-style `src` layout, no deep package hierarchy directories.
   - Prompts for Scala version, defaulting to latest release.
+  - `spec` [scaffold] to generate stub ScalaTest files. Enable the
+    `sbt-g8-scaffold` sbt plugin to use it with `g8Scaffold spec`.
+
+    Edit defaults in `.g8/spec/default.properties` after the first use to spare
+    yourself from entering project details like package name repetitively.
 
 That's all so far :-)
 
@@ -74,4 +79,5 @@ specific language governing permissions and limitations under the License.
 [sbt new]: http://www.scala-sbt.org/0.13/docs/sbt-new-and-Templates.html
 [installation]: http://www.foundweekends.org/giter8/setup.html
 [SBT]: http://www.scala-sbt.org/
+[scaffold]: http://www.foundweekends.org/giter8/scaffolding.html
 [Making your own templates]: http://www.foundweekends.org/giter8/template.html
