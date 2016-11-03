@@ -1,10 +1,10 @@
 Scala Project Templates
 -----------------------
 
-Templates for generating project skeletons with [giter8]. There are [many others
-to choose from][templates], I wanted something more minimal than most of those
-as the default, with more specific or opinionated templates available on
-branches.
+Templates for generating project skeletons with `sbt new`, via [giter8]. There
+are [many others to choose from][templates], I wanted something more minimal
+than most of those as the default, with more specific or opinionated templates
+available on branches.
 
 For an open source project, I recommend having a look at
 [joescii/scala-oss][oss] for extra features like publishing Scaladoc to GitHub
@@ -12,19 +12,19 @@ Pages, publishing artifacts for multiple Scala versions to Maven Central, etc.
 
 ### Usage ###
 
-If you're not already a giter8 user, you'll need to install it. With Homebrew on
-Mac OS X, it's convenient to `brew install giter8`. Otherwise, see
-[installation].
+Since sbt 0.13.13, you can simply [use `sbt new`][sbt new]:
 
-Then, simply invoke `g8` to generate a project with this template:
+    $ sbt new ches/scala-project
+
+You will be prompted for parameters such as your project name.
+
+If for some reason you can't run sbt 0.13.13, you can use giter8 directly.
+With Homebrew on Mac OS X, it's convenient to `brew install giter8`. Otherwise,
+see the [installation].
+
+Then, simply invoke `g8` to generate a project:
 
     $ g8 ches/scala-project
-
-You will be prompted for parameters such as project name.
-
-**Note**: giter8 0.6.8 is required, since the templates use the new Maven
-resolver feature to suggest the latest version of Scala, etc. This version may
-not yet be available in Homebrew, installation with Conscript is suggested.
 
 ### Available Templates ###
 
@@ -68,10 +68,10 @@ under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations under the License.
 
-[giter8]: https://github.com/n8han/giter8
-[templates]: https://github.com/n8han/giter8/wiki/giter8-templates
+[giter8]: https://github.com/foundweekends/giter8
+[templates]: https://github.com/foundweekends/giter8/wiki/giter8-templates
 [oss]: https://github.com/joescii/scala-oss.g8
-[installation]: https://github.com/n8han/giter8#installation
+[sbt new]: http://www.scala-sbt.org/0.13/docs/sbt-new-and-Templates.html
+[installation]: http://www.foundweekends.org/giter8/setup.html
 [SBT]: http://www.scala-sbt.org/
-[Making your own templates]: https://github.com/n8han/giter8#making-your-own-templates
-
+[Making your own templates]: http://www.foundweekends.org/giter8/template.html
