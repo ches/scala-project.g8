@@ -1,7 +1,7 @@
 LICENSE
 -------
 
-Written 2014-2016 by Ches Martin <ches@whiskeyandgrits.net>.
+Written 2014-2019 by Ches Martin <ches@whiskeyandgrits.net>.
 
 To the extent possible under law, the author(s) have dedicated all copyright
 and related and neighboring rights to this software to the public domain

@@ -10,7 +10,6 @@ libraryDependencies ++= Seq(
 )
 
 // Convenience for sbt console
-initialCommands in console := "import $package$._"
-
 // ...but leave consoleQuick as escape hatch if the build is broken!
+initialCommands in console      := "import $package$._"
 initialCommands in consoleQuick := ""
