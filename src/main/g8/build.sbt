@@ -5,11 +5,9 @@ scalaVersion := "$scala_version$"
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xlint")
 
-libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "$scalatest_version$" % "test"
-)
-
 // Convenience for sbt console
 // ...but leave consoleQuick as escape hatch if the build is broken!
 initialCommands in console      := "import $package$._"
 initialCommands in consoleQuick := ""
+
+libraryDependencies += Dependencies.scalaTest % Test
