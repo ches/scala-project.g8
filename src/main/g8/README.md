@@ -30,4 +30,4 @@ Below is a list of features we would like to one day include in this project
 
 ### License
 
-Copyright 2019 $organization$. All rights reserved.
+Copyright 2021 $organization$. All rights reserved.
