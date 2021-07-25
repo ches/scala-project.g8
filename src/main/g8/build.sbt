@@ -17,12 +17,12 @@ scalacOptions ++= Seq(
   "-Ywarn-unused-import",
   "-Ywarn-value-discard",
 )
-scalacOptions in (Compile, console) -= "-Ywarn-unused-import"
-scalacOptions in (Test, console)    -= "-Ywarn-unused-import"
+Compile / console / scalacOptions -= "-Ywarn-unused-import"
+Test / console / scalacOptions    -= "-Ywarn-unused-import"
 
 // Convenience for sbt console
 // ...but leave consoleQuick as escape hatch if the build is broken!
-initialCommands in console      := "import $package$._"
-initialCommands in consoleQuick := ""
+console / initialCommands := "import $package$._"
+consoleQuick / initialCommands := ""
 
 libraryDependencies += Dependencies.scalaTest % Test
