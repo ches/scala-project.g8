@@ -1,7 +1,7 @@
 package $package$
 
 package test {
-  import org.scalatest._
+  import org.scalatest._, matchers.should
 
-  abstract class UnitSpec extends FunSpec with Matchers with OptionValues
+  abstract class UnitSpec extends funspec.AnyFunSpec with should.Matchers with OptionValues
 }
